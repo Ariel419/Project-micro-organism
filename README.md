@@ -48,7 +48,7 @@ You may see Train Loss, Train Accuracy, Val Loss, Val Accuracy for each epoch.
 Finally, to print the image with the labels, we can use this command (if the dataset is about cats and dogs):
 'imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/cat/01.jpg cat.jpg'
 
-# Limitations:
+# Limitations
 
 There are certain limitations to the way this CNN functions since it is up to the programmers to decide how many epochs are over or under the perfect fit.
 This is because executing the same images too many times will **overfit** the data and become **less able to generalise** to new scenarios. 
@@ -59,7 +59,7 @@ As we can see by this image, anything between 0 to 6 epochs is in a **unregular 
 ![image](https://github.com/Ariel419/Project-micro-organism/assets/174376607/1b0757c7-e8c9-4e75-91b1-dba3ada52c51)
 
 
-# Running this project=
+# Running this project
 
 1) **Chose the image classification** you would like to pursue in your program. In my case, I chose the dataset of **micro-organism**. Each image saved from the dataset needs to be different from the other files in the dataset.
 
