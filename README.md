@@ -11,7 +11,7 @@ description:
 
 ## The Algorithm
 
-We employed a **convolutional neural network(CNN)** named resnet 18, which essentially accelerates the process by which nanocomputers percieve patterns in disparate images of the same object.
+We employed a **convolutional neural network(CNN)** named *resnet 18*, which essentially accelerates the process by which nanocomputers percieve patterns in disparate images of the same object.
 
 The primary model for image classification, **imagenet**, was already there and was utilised to train new models.
 
