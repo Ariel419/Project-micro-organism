@@ -59,7 +59,7 @@ As we can see by this image, anything between 0 to 6 epochs is in a **unregular 
 
 1) **Chose the image classification** you would like to pursue in your program. In my case, I chose the dataset of **micro-organism**. Each image saved from the dataset needs to be different from the other files in the dataset.
 
-2)Chose **minimum** 100 images for each micro-organism.
+2) Chose **minimum** 100 images for each micro-organism.
 
 3) On **visual studio code**, go to 'jetson-inference/python/training/classification/models' and create a new folder called 'micro-org1'
 
