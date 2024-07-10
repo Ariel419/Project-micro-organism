@@ -18,6 +18,7 @@ The primary model for image classification, **imagenet**, was already there and 
 The object could be **anything**, including, animals,food, emotions and even more as long as it has a **distinctive appearance** and can be given a name.
 
 This image shows how Convolutional Neural Network works:
+
 ![image](https://github.com/Ariel419/Project-micro-organism/assets/174376607/2a6212d8-561d-4385-a8d2-81058f2d636c)
 
 
