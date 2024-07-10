@@ -1,4 +1,4 @@
-# Project-micro-organism
+# Project micro-organism
  
 This program aims to identify multiple types of micro-organsim. In fact, they aren't all dangerous and are very useful for human growth. By detecting which micro-organism is which, scientists can use this AI model to exploit them carefully in an experiment.
 
