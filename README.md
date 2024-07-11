@@ -73,28 +73,31 @@ However, if you employ a small amount of epochs, the model may **undefit** the d
 
 5) Write in the file labels.txt a list in alphabetical order of the chosen micro-organism
 
-6) Each of the test, train and val folders should have a folder named after each micro-organisms. Such as Yield, Euglena or Hydra. 
+6) Each of the test, train and val folders should have a folder named after each micro-organisms. Such as Yield, Euglena or Hydra.
 
-7) The micro-organism folder should have **10%** of the images for each chosen micro-organism in **test** and **val**, while the other **80%** should be in **train**.
+![Screenshot (2)](https://github.com/Ariel419/Project-micro-organism/assets/174376607/500235ce-6f18-491d-ae1f-e9ddd34c9a02)
 
-8) Make sure to then go back into `jetson-inference` and proceed by going into `./docker/run.sh`, this command will create a new container and run it or even take an image if needed.
 
-9) Inside of the docker container,  change directories so you are in `jetson-inference/python/training/classification` and paste `python3 train.py --model-dir=models/micro-org1 data/micro-org1`. This script contains the code that will train the model.
+8) The micro-organism folder should have **10%** of the images for each chosen micro-organism in **test** and **val**, while the other **80%** should be in **train**.
 
-10) You can then chose how the model runs with:
+9) Make sure to then go back into `jetson-inference` and proceed by going into `./docker/run.sh`, this command will create a new container and run it or even take an image if needed.
+
+10) Inside of the docker container,  change directories so you are in `jetson-inference/python/training/classification` and paste `python3 train.py --model-dir=models/micro-org1 data/micro-org1`. This script contains the code that will train the model.
+
+11) You can then chose how the model runs with:
     > --batch-size=NumberOfBatchFiles
     > --workers=NumberOfWorkers
     > --epochs=NumberOfEpochs
 
-11) When the program finished running the number of epochs chosen, make sure you are in the `docker container` and in `jetson-inference/python/training/classification`
+12) When the program finished running the number of epochs chosen, make sure you are in the `docker container` and in `jetson-inference/python/training/classification`
 
-12) You can then run this script: `python3 onnx_export.py --model-dir=models/micro-org1`. This program will save the training as `resnet18.onnx` to your `micro-org1 folder`
+13) You can then run this script: `python3 onnx_export.py --model-dir=models/micro-org1`. This program will save the training as `resnet18.onnx` to your `micro-org1 folder`
 
-13) Use `Ctrl+D` to exit the docker container so we can then change docker to the nano to see if the training actually works.
+14) Use `Ctrl+D` to exit the docker container so we can then change docker to the nano to see if the training actually works.
 
-14) Go into the `jetson-inference/python/training/classification` directory and then input `ls models/micro-org1/` to make sure that the model is on the nano
+15) Go into the `jetson-inference/python/training/classification` directory and then input `ls models/micro-org1/` to make sure that the model is on the nano
 
-15) Set the **NET** and **DATASET** variables as followed :
+16) Set the **NET** and **DATASET** variables as followed :
     > NET=models/micro-org1
 
     > DATASET=data/micro-org1
