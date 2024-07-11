@@ -93,7 +93,8 @@ However, if you employ a small amount of epochs, the model may **undefit** the d
 
 13) You can then run this script: `python3 onnx_export.py --model-dir=models/micro-org1`. This program will save the training as `resnet18.onnx` to your `micro-org1 folder`
 
-![image](https://github.com/Ariel419/Project-micro-organism/assets/174376607/fdb94a58-8bec-4567-ae0b-7322619cc2f7)
+![Screenshot (3)](https://github.com/Ariel419/Project-micro-organism/assets/174376607/4af962f8-4a9e-494e-b373-41904c632ad0)
+
 
 
 14) Use `Ctrl+D` to exit the docker container so we can then change docker to the nano to see if the training actually works.
