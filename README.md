@@ -93,6 +93,9 @@ However, if you employ a small amount of epochs, the model may **undefit** the d
 
 13) You can then run this script: `python3 onnx_export.py --model-dir=models/micro-org1`. This program will save the training as `resnet18.onnx` to your `micro-org1 folder`
 
+![image](https://github.com/Ariel419/Project-micro-organism/assets/174376607/fdb94a58-8bec-4567-ae0b-7322619cc2f7)
+
+
 14) Use `Ctrl+D` to exit the docker container so we can then change docker to the nano to see if the training actually works.
 
 15) Go into the `jetson-inference/python/training/classification` directory and then input `ls models/micro-org1/` to make sure that the model is on the nano
