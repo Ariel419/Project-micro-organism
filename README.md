@@ -5,10 +5,6 @@ This program aims to identify multiple types of micro-organsim. In fact, they ar
 
 ![Screenshot (1)](https://github.com/Ariel419/Project-micro-organism/assets/174376607/ffc0ecaa-1769-4a42-8603-5f1907a0869c)
 
-description:
-
-> 
-
 
 ## The Algorithm
 
@@ -108,3 +104,6 @@ However, if you employ a small amount of epochs, the model may **undefit** the d
 
 17) Finally run `imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/Hydra/Image_11.jpg micro-org3.jpg` to see your image chosen labelled correctly with the type of **micro-organism's name** and **percentage of accuracy**.
 
+
+# The following video shows how the projet works step by step until the final project
+> https://youtu.be/0hOA5VS0Nfk
